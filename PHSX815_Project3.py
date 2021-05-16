@@ -53,7 +53,7 @@ print('Predicted probability = %s. Simulated probability = %s.' %(p, p_sim))
 # Hypothesis 1:
 
 step_prob = 0.5  # Can step left or right equally.
-n_steps = 100 # Essentially number of steps.
+n_steps = 1000 # Essentially number of steps.
 
     
 # Set up a vector to store our positions.
@@ -115,7 +115,7 @@ print("The estimated probability of the drunkard stepping to the right is p=%s o
 # Let us now use the estimated parameter to simulate more experiments
 
 step_prob=y[0]
-n_steps=100
+n_steps=1000
 
 position = np.zeros(n_steps)
 
