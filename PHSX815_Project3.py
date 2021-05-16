@@ -133,8 +133,8 @@ for i in range(1, n_steps):
     # Update our position based on where we were in the last time point. 
     position[i] = position[i-1] + step
     
-P=(((math.factorial(n_steps))*((convert(y[0]))**(n_steps-nl))*((1-(convert(y[0])))**(nl)))/((math.factorial(nl))*(math.factorial((n_steps-nl)))))
-print("The likelihood for our hypothesis is %s" %(P))
+#P=(((math.factorial(n_steps))*((convert(y[0]))**(n_steps-nl))*((1-(convert(y[0])))**(nl)))/((math.factorial(nl))*(math.factorial((n_steps-nl)))))
+#print("The likelihood for our hypothesis is %s" %(P))
 
 plt.plot(steps, position)
 plt.xlabel('Number of steps')
