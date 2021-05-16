@@ -109,8 +109,8 @@ def convert(s):
 
 print("The estimated probability of the drunkard stepping to the right is p=%s or %s" %(y[0], convert(y[0])))
 
-P=(((math.factorial(n_steps))*((convert(y[0]))**(n_steps-nl))*((1-(convert(y[0])))**(nl)))/((math.factorial(nl))*(math.factorial((n_steps-nl)))))
-print("The likelihood for our hypothesis is %s" %(P))
+#P=(((math.factorial(n_steps))*((convert(y[0]))**(n_steps-nl))*((1-(convert(y[0])))**(nl)))/((math.factorial(nl))*(math.factorial((n_steps-nl)))))
+#print("The likelihood for our hypothesis is %s" %(P))
 
 
 # Let us now use the estimated parameter to simulate more experiments
@@ -203,6 +203,3 @@ plt.plot(steps, mean_position, 'b-')
 plt.xlabel('Number of steps')
 plt.ylabel('Position')
 plt.show()
-
-
-
